@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e6d2;
+    text-align: center;
+}
+
+#game-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid #6d9a63;
+    background-color: #f8f1e4;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #6d9a63;
+    color: white;
+    border: none;
+}
+
+#object-image {
+    width: 300px;
+}
+
+#feedback {
+    display: none;
+}
+
+#dundee-image {
+    width: 200px;
+}
+
+#score {
+    font-weight: bold;
+}
