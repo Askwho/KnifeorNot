@@ -6,13 +6,13 @@ const gameArea = document.getElementById('game-area');
 const feedback = document.getElementById('feedback');
 
 const images = [
-    { src: 'C:/Users/Tom/OneDrive/Documents/Knifeornot/Knife/41YzK84aI+L.jpg', isKnife: true },
-	{ src: 'C:/Users/Tom/OneDrive/Documents/Knifeornot/Knife/i-found-this-strange-knife-in-a-grandpas-old-chest-any-idea-v0-xeedmieim5x91.jpg', isKnife: true },
-	{ src: 'C:/Users/Tom/OneDrive/Documents/Knifeornot/Knife/knife06.jpg', isKnife: true },
-    { src: 'C:/Users/Tom/OneDrive/Documents/Knifeornot/Not Knife/71OPhvMBuRL.jpg', isKnife: false },
-	{ src: 'C:/Users/Tom/OneDrive/Documents/Knifeornot/Not Knife/608465l5.jpg', isKnife: false },
-	{ src: 'C:/Users/Tom/OneDrive/Documents/Knifeornot/Not Knife/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg', isKnife: false },
-	{ src: 'C:/Users/Tom/OneDrive/Documents/Knifeornot/Not Knife/LT_471_(LTZ_1471)_Arriva_London_New_Routemaster_(19522859218).jpg', isKnife: false },
+    { src: 'Knife/41YzK84aI+L.jpg', isKnife: true },
+	{ src: 'Knife/i-found-this-strange-knife-in-a-grandpas-old-chest-any-idea-v0-xeedmieim5x91.jpg', isKnife: true },
+	{ src: 'Knife/knife06.jpg', isKnife: true },
+    { src: 'Not Knife/71OPhvMBuRL.jpg', isKnife: false },
+	{ src: 'Not Knife/608465l5.jpg', isKnife: false },
+	{ src: 'Not Knife/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg', isKnife: false },
+	{ src: 'Not Knife/LT_471_(LTZ_1471)_Arriva_London_New_Routemaster_(19522859218).jpg', isKnife: false },
     // Add more images here
 ];
 
@@ -36,11 +36,11 @@ function nextRound() {
 
 function guess(isKnife) {
     if (isKnife === currentImage.isKnife) {
-        dundeeImage.src = 'C:/Users/Tom/OneDrive/Documents/Knifeornot/Dundee/maxresdefault.jpg';
+        dundeeImage.src = 'Dundee/maxresdefault.jpg';
         feedbackText.textContent = "Crikey, that's right!";
         score++;
     } else {
-        dundeeImage.src = 'C:/Users/Tom/OneDrive/Documents/Knifeornot/Dundee/mick-sue-CROC0916-4fe1a87d2df440f4b5b7590c9480549a.jpg';
+        dundeeImage.src = 'Dundee/mick-sue-CROC0916-4fe1a87d2df440f4b5b7590c9480549a.jpg';
         feedbackText.textContent = "Struth, not quite got it mate";
         score--;
     }
